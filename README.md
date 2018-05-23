@@ -7,7 +7,7 @@ Mostly copied from here [http://soasecurity.org/2012/08/12/secure-plain-text-pas
 
 0. Stop Server
 1. Configure passwords in **/repository/conf/security/cipher-text.properties**
-2. Run **/bin/cipher-tool.\[bat|sh\] -DConfigure**, supplying **master password**
+2. Run **/bin/cipher-tool.\[bat|sh\] -Dconfigure**, supplying **master password**
 3. Start to confirm all is **OK**, this will ask for **master password**
 4. Stop server
 5. Replace all occurances of **org.wso2.carbon.securevault.DefaultSecretCallbackHandler**, with **com.sample.password.callback.handler.HardCodedSecretCallbackHandler**, in **repository/conf/security/secret-conf.properties**
